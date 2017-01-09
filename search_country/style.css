@@ -1,0 +1,50 @@
+body {
+	background-image: url(https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #dbdbdb; 
+}
+.container {
+	width: 1200px;
+	text-align: center;
+	background-color: rgba(0, 1, 27, 0.7);
+	margin-top: 5em;
+	padding-bottom: 3em;
+}
+h1, h2 {
+	color: #fff;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+input{
+	width: 15em;
+	height: 3em;
+	border: none;
+	padding-left: 2em;
+	border: 2px solid #41ccc7;
+}
+button {
+	width: 10em;
+	height: 3.1em;
+	border:none;
+	background-color: #41ccc7;
+	color:#fff;
+}
+ul {
+	list-style-type: none;
+	text-transform: uppercase;
+}
+ul li {
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	padding-top: 1em;
+}
+div:nth-child(1) {
+	text-align: right;
+}
+div:nth-child(2) {
+	text-align: left;
+}

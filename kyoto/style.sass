@@ -1,0 +1,519 @@
+$fonts: "Open-Sans",sans-serif
+$background-navy: #11152F	
+$orange-color:#dd4001
+$orange-hover-color:#962e00
+$text-transform: uppercase
+$grey-text-color: #757575
+$white-color: #fff
+$phone: 768px
+$tablet: 767px
+$font-weight: 400
+
+*
+	box-sizing: border-box
+	
+body
+	margin: 0
+	padding: 0
+	font-family: $fonts
+	background-color: #f6f6f6
+
+.row
+	&:before,
+	&:after 
+		content: ""
+		display: table
+		clear: both
+
+header 
+	background-color: $background-navy
+	height: 50px
+	@media (max-width:$phone)
+		float: none
+		text-align: center
+		width: 100%
+		height: 200px
+		background-color: #11152F
+		
+.container 
+	width: 100%
+	max-width: 1200px
+	margin: 0 auto
+
+header 
+	&>nav
+		&>ul
+			margin: 0
+			padding: 0
+			list-style-type: none
+			float: right
+			@media (max-width:$phone)
+				float: none
+				text-align: center
+nav
+	li
+		float: right
+		@media (max-width:$phone)
+			float: none
+			text-align: center
+
+header 
+	&>nav 
+		&>ul 
+			&>li 
+				&>a
+					line-height: 50px
+					padding: 0 20px
+					display: block
+					color: #fff
+					text-decoration: none
+					text-transform: $text-transform
+					&:hover
+						background-color: #111552
+
+header 
+	&>nav 
+		&>img
+			padding: 10px 0  
+
+.hero 
+	width: 100%
+	height: calc(100vh - 50px)
+	background: url(https://static.pexels.com/photos/96420/pexels-photo-96420.jpeg)
+	background-size: cover
+	background-position: center
+
+.slogan 
+	background-color: rgba(0,0,0,0.5)  
+	float: right
+	max-height: 800px
+	margin-top: 40vh
+
+	p 
+		color: $white-color
+		text-transform: $text-transform
+		margin: 1px 150px 1px 15px
+		font-size: 30px
+		&:nth-child(2) 
+			font-weight: bold
+
+.slider 
+	width: 100%
+	@media (max-width: $phone)
+		display: none
+	@media (min-width: $tablet)	
+		display: none
+
+	ul 
+		position: absolute
+		top: 85vh
+		left: 0
+		right: 0
+		text-align: center
+		padding: 0
+		li 
+			display: inline-block
+			width: 15px
+			height: 15px
+			background: #962e00
+			border-radius: 50%
+			margin-left: 15px
+			&:first-child
+				margin-left: 0	
+			&:hover 
+				background-color: #fff
+
+[class*="col-"]
+	width: 100%
+	padding: 12px
+	float: left
+
+section
+	.container 
+		margin: 50px auto
+		text-align: center
+		max-width: 1200px
+
+/* icons where */
+.col-4
+	i.fa 
+		width: 50px
+		height: 50px
+		border-radius: 100%
+		border: none
+		background-color: $orange-color	
+		color: $white-color
+		text-align: center
+		font-size: 25px
+		line-height: 50px
+		&:hover 
+			background-color: $orange-hover-color
+			transform: scale(1.12)
+			transition: ease-in-out .3s
+			cursor: pointer
+	h2 
+		text-transform: $text-transform
+		font-weight: $font-weight
+		color: $background-navy
+
+.container
+	h2 
+		text-transform: $text-transform
+		font-weight: 400
+		color: #11152F
+	p 
+		color: $grey-text-color
+
+.gallery 
+	margin: 0	
+	position: relative
+	width: 100%
+	
+	.row 
+		height: 250px
+		[class*="col"] 
+			overflow: hidden
+			float: left
+			display: block
+			position: relative
+
+.col40 
+	width: 40%
+	&:hover .layer 
+		transition: ease-in-out .3s
+		background-color: rgba(0,0,0, 0.5)	
+
+	img 
+		width: 100%
+		height: 250px
+		object-fit: cover
+
+	.layer 
+		width: 100%
+		height: 100%
+		position: absolute
+		text-align: center
+		background-size: cover
+		&:hover i.fa 
+			background-color: $white-color
+			color: grey
+			transition: ease-in-out .3s
+		i.fa 
+			margin-top: 100px
+			margin-left: 15px
+			background-color: rgba(0,0,0,0)
+			border-radius: 5%
+			width: 50px
+			height: 50px
+			text-align: center
+			line-height: 50px
+			cursor: pointer
+			color: transparent
+			@media (max-width:$phone)
+				color: #000000
+				background-color: #fff
+				width: 20px
+				height: 20px
+				line-height: 20px
+.col20 
+	width: 20%
+	&:hover .layer 
+		background-color: rgba(0,0,0, 0.5)	
+	img 
+		width: 100%	
+		height: 250px
+		object-fit: cover
+
+	.layer 
+		width: 100%
+		height: 100%
+		position: absolute
+		text-align: center
+		background-size: cover
+		&:hover i.fa 
+			background-color: $white-color
+			color: grey
+			transition: ease-in-out .3s
+		i.fa 
+			margin-top: 100px
+			margin-left: 15px
+			background-color: rgba(0,0,0,0)
+			border-radius: 5%
+			width: 50px
+			height: 50px
+			text-align: center
+			line-height: 50px
+			cursor: pointer
+			color: transparent
+			@media (max-width:$phone)
+				color: #000000
+				background-color: #fff
+				width: 20px
+				height: 20px
+				line-height: 20px
+.team .col-3 
+	position: relative
+
+.team
+	.col-3
+		&:hover .layer 
+			display: block
+			cursor: pointer
+	img 
+		width: 100%
+		height: 250px
+	
+.team 
+	.img 
+		width: 200px
+		height: 200px
+		border-radius: 50%
+	.row
+		[class*="col"]
+			position: relative
+	h3 
+		text-transform: $text-transform
+		font-weight: 400
+		color: #11152F
+	p 
+		color: $grey-text-color
+
+	.layer 
+		width: 200px
+		height: 200px
+		border-radius: 50%
+		background-color: rgba(0,0,0, 0.5)
+		line-height: 200px
+		top: 0
+		bottom: 0
+		margin: auto
+		position: absolute
+		left: 0
+		right: 0
+		display: none
+		p 
+			color: $white-color
+			margin: 0
+
+.image 
+	border-top: 1px solid $orange-color	
+	border-bottom: 1px solid $orange-color
+	background-color: #e6e7e8
+	
+	img 
+		width: 100%
+		height: 200%
+		@media (max-width:$phone)
+			background-image: cover
+	p 
+		text-align: left
+		margin-left: 0
+		margin-top: 0
+		@media (max-width:$phone)
+			text-align: center
+	h2 
+		text-align: left
+		margin-left: 0
+		@media (max-width:$phone)
+			text-align: center		
+	div 
+		padding: 10px
+
+.numbers 
+	h3 
+		font-weight: 700
+		color: $orange-color
+		font-size: 30px
+		&:hover 
+			color: $background-navy
+			transform: scale(1.12)
+			transition: ease-in-out .3s
+
+.contact 
+	background-color: $background-navy
+	p 
+		text-align: left
+		margin-left: 20px
+		margin-top: 0
+		color: #fff
+		font-weight: 300
+		@media (max-width:$phone)
+			text-align: center	
+			
+	h3 
+		text-align: left
+		margin-left: 0px
+		color: #fff
+		@media (max-width:$phone)
+			text-align: center	
+			
+	.container 
+		margin-top: 0
+		margin-bottom: 0
+
+.line 
+	line-height: 0.5
+	text-align: center
+	span 
+		display: inline-block
+		position: relative
+		&:after 
+			content: ""
+			position: absolute
+			height: 5px
+			border-top: 1px solid white
+			top: 5px
+			width: 50px
+			padding: 5px
+			margin-left: 10px
+
+.contact 
+	p 
+		font-size: 12px
+		padding: 0
+		margin: 0
+	h1 
+		margin-left: 0
+	.col-2 
+		padding: 0
+	.col-10 
+		padding-top: 0
+
+.social 
+	float: left
+	margin: 0 auto
+	transition: background-linear .3s
+	text-align: center
+	@media (max-width:$phone)
+		float: none
+		text-align: center	
+	i.fa 
+		font-size: 15px
+		color: $white-color
+		width: 30px
+		height: 30px
+		border-radius: 100%
+		border: none
+		background-color: $orange-color
+		margin: 10px
+		margin-left: 0
+		line-height: 30px
+		&:hover
+			background-color: $orange-hover-color
+			cursor: pointer
+
+footer 
+	background-color: $background-navy
+	height: 50px
+	color: $white-color
+	text-align: center
+	padding-top: 10px
+
+img 
+	vertical-align: bottom
+
+.col-1 
+	width: 8.33%
+.col-2 
+	width: 16.66%
+.col-3 
+	width: 25%
+.col-4 
+	width: 33.33%
+.col-5 
+	width: 41.66%
+.col-6 
+	width: 50
+.col-7 
+	width: 58.33%
+.col-8 
+	width: 66.66%
+.col-9 
+	width: 75%
+.col-10 	
+	width: 83.33%
+.col-11 
+	width: 91.66%
+.col-12 
+	width: 100%
+	
+.col-s-1 
+	@media (max-width: 767px)
+		width: 8.33%
+.col-s-2 
+	@media (max-width: 767px)
+		width: 16.66%
+.col-s-3 
+	@media (max-width: 767px)
+		width: 25%
+.col-s-4 
+	@media (max-width: 767px)
+		width: 33.33%
+.col-s-5
+	@media (max-width: 767px)
+		width: 41.66%
+.col-s-6
+	@media (max-width: 767px)
+		width: 50%
+.col-s-7
+	@media (max-width: 767px)
+		width: 58.33%
+.col-s-8
+	@media (max-width: 767px)
+		width: 66.66%
+.col-s-9 
+	@media (max-width: 767px)
+		width: 75%
+.col-s-10 
+	@media (max-width: 767px)
+		width: 83.33%
+.col-s-11 
+	@media (max-width: 767px)
+		width: 91.66%
+.col-s-12 
+	@media (max-width: 767px)
+		width: 100%
+
+.col50 
+	@media (max-width: 767px)
+		width: 50%
+
+.col-m-1  
+	@media (min-width: 768px)
+		width: 8.33%
+.col-m-2 
+	@media (min-width: 768px)
+	width: 16.66%
+.col-m-3 
+	@media (min-width: 768px)
+	width: 25%
+.col-m-4 
+	@media (min-width: 768px)
+	width: 33.33%
+.col-m-5
+	@media (min-width: 768px)
+	width: 41.66%
+.col-m-6 
+	@media (min-width: 768px)
+	width: 50
+.col-m-7 
+	@media (min-width: 768px)
+	width: 58.33%
+.col-m-8
+	@media (min-width: 768px)
+	width: 66.66%
+.col-m-9 
+	@media (min-width: 768px)
+	width: 75%
+.col-m-10 	
+	@media (min-width: 768px)
+	width: 83.33%
+.col-m-11 
+	@media (min-width: 768px)
+	width: 91.66%
+.col-m-12
+	@media (min-width: 768px)
+	width: 100%
+ 
+
+

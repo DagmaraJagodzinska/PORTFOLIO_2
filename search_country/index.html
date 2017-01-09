@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Search country</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="jquery-1.12.4.min.js"></script>
+	</head>
+	<body>
+		<section class="container">
+				<h1>Choose your country</h1>
+				<input id="country-name" type="text" />
+				<button id="search">Szukaj kraju</button>
+				<h2>Informations:</h2>
+			<div class="row">	
+				<div class="col-md-6">
+					<ul>
+						<li>Country:</li>
+						<li>Capital:</li>
+						<li>Region:</li>
+						<li>Population:</li>
+						<li>Timezone:</li>
+						<li>Currency:</li>	
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<ul id="countries">
+						<li id="name"></li>
+						<li id="capital"></li>
+						<li id="region"></li>
+						<li id="population"></li>
+						<li id="timezones"></li>
+						<li id="currencies"></li>
+					</ul>
+				</div>
+			</div>	
+		</section>
+		<script type='text/javascript' src='script.js'></script>
+	</body>
+</html>

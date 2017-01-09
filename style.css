@@ -1,0 +1,344 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	overflow-x: hidden;
+}
+.navbar-custom {
+	background-color: #000000;
+}
+.navbar .navbar-brand-custom, .navbar-inverse .navbar-nav li a {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+}
+.navbar .navbar-brand-custom:hover {
+	cursor: pointer;
+}
+.line {
+	border-bottom: 3px solid #4b32f0;
+	position: absolute;
+	top: 40px;
+	height: 2px;
+	width: 260px;
+}
+.titleletter {
+	font-weight: bold;
+}
+.titleletter, .navbar-inverse .navbar-nav>li>a:hover {
+	color: #19d6cc;
+}
+.jumbotron {
+	background: #000000;
+	height: 100vh; 
+}
+.jumbotron .container:nth-child(1) {
+	background: url(fot/fot_main_c.jpg) no-repeat; 
+	height: 80vh;
+	background-position: 0 50%;
+	background-size: auto;
+}
+.jumbotron h1 {
+	color: #fff;
+	font-size: 70px;
+	letter-spacing: 0.03em;
+	padding-left: 30vw;
+	padding-top: 20vh;
+	padding-bottom: 5vh;
+}
+/* ARROW */
+.arrows {
+	width: 60px;
+	height: 50px;
+}
+.arrows path {
+	stroke: #fff;
+	fill: transparent;
+	stroke-width: 2px;	
+	animation: arrow 3s infinite;
+	-webkit-animation: arrow 3s infinite; 
+}
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+.about{
+	margin-bottom: 60px
+}
+.about2, .about2 .gitlink, .aboutgraphic .link {
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+.about h2 {
+	color: #19d6cc;
+	font-size: 40px;
+	margin: 0;
+	padding-left: 15px;
+	font-weight: bold;
+}
+.about p {
+	color: #4b32f0;
+	font-weight: bold;
+	font-size: 40px;
+	font-weight: bold;
+	margin: 0;
+}
+.about .text-and {
+	font-size: 200px;
+	color: #e2e2e2;
+	line-height: 109px;
+	position: relative;
+	z-index: -1;
+	left: -67px;
+}
+.about2 .hovereffect, .aboutgraphic .hovereffect{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	background: transparent;
+}
+.about2 .hovereffect .overlay, .aboutgraphic .hovereffect .overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	padding: 50px 20px; 
+	opacity: 0;
+	transition: 2s; 
+}
+.about2 .hovereffect .overlay:hover,.aboutgraphic .hovereffect .overlay:hover {
+	opacity:1;
+}
+.about2 .hovereffect .overlay p, .aboutgraphic .hovereffect .overlay p{
+	color: #fff;
+	letter-spacing: 0.2em;
+	padding-top: 30%;
+	font-size: 20px;
+}
+.about2 .text-frontend, .aboutgraphic .text-frontend {
+	padding: 15em 2em 0 0;
+}
+.about2 .text-frontend .bold, .aboutgraphic .bold {
+	font-weight: bold;
+	color: #19d6cc;
+}
+.about2 .gitlink, .aboutgraphic .link {
+	width: 100%;
+	height: 250px;
+	background-color: #17C2B9;
+	color: #fff;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.about2 .gitlink,  .aboutgraphic .link{
+	margin-top: 20px;
+	transition: 1s ease; 
+}
+.about2 .gitlink:hover, .aboutgraphic .link:hover {
+	cursor: pointer;
+	background-color: #93F0E4; 
+	color: #17C2B9;
+	font-weight: bold;
+}
+.about2 .gitlink p, .aboutgraphic .link p {
+	font-size: 20px;
+	letter-spacing: 0.1em;
+}
+.about2 .giticon {
+	width: 250px;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.about2 .giticon i.fa {
+	color: #4b32f0;
+	font-size: 10em;
+	transition: 1s ease; 
+}
+.about2 .giticon i.fa:hover, .footer .social a:hover, .footer .mail a:hover {
+	color: #19d6cc;
+	cursor: pointer;
+}
+.aboutgraphic .graphlink {
+	background-color: #e2e2e2;
+	width: 100%;
+	height: 200%; 
+	text-align: center;
+}
+.aboutgraphic .graphlink p {
+	padding-top: 30%;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+.about2 a, .aboutgraphic a {
+	text-decoration: none;
+}
+.footer {
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-color: #000000;
+	width: 100%;
+	height: 6em;
+}
+.footer .mail a {
+	color: #fff;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	padding-top: 0;
+}
+.footer .mail{
+	text-align: right;
+}
+.footer .social a {
+	font-size: 2em;
+	color: #fff;
+	padding-right: 2%;
+	transition: 0.5s ease;
+	text-align: left;
+}
+
+/* MEDIA */
+
+@media(max-width: 1200px){
+	.about2 .gitlink, .aboutgraphic .link {
+		width: 450px;
+		height: 200px;
+	}
+}
+
+@media(max-width: 992px){
+	.jumbotron h1 {
+		font-size: 65px;
+		padding-left: 20vw;
+		padding-top: 20vh;
+	}
+	.about h2 {
+		font-size: 40px;
+		padding-left: 35px;
+		text-align: center;
+	}
+	.about p {
+		color: #4b32f0;
+		font-weight: bold;
+		font-size: 40px;
+		padding-left: 20px;
+		text-align: center;
+	}
+	.about .text-and {
+		font-size: 200px;
+		color: #e2e2e2;
+		line-height: 109px;
+		z-index: -1;
+		left: 0;
+	}
+	.about2 .text-frontend, .aboutgraphic .text-frontend {
+		padding: 3em 2em 2em 0;
+	}
+	.about2 .gitlink, .aboutgraphic .link {
+		width: 450px;
+		height: 200px;
+	}
+	.about2 .gitlink, .aboutgraphic .link {
+		width: 100%;
+	}
+	.about2 .hovereffect .overlay, .aboutgraphic .hovereffect .overlay{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		overflow: hidden;
+		top: 0;
+		left: 0;
+		padding: 10px 20px; 
+		opacity: 1;
+	}
+	.footer .mail{
+		text-align: center;
+	}
+	.footer .social {
+		text-align: center;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}	
+}
+/*MEDIA SMARTPHONE*/
+@media(max-width: 767px) {
+	.nav li {
+		text-align: center;
+	}
+	.line {
+		border-bottom: 3px solid #4b32f0;
+		position: absolute;
+		top: 40px;
+		height: 2px;
+		width: 275px;
+	}
+	.jumbotron h1 {
+		font-size: 52px;
+		padding-left: 10vw;
+		padding-top: 20vh;
+	}
+	.jumbotron .container:nth-child(1) {
+		background-position: 50% 55%;
+	}
+	.about h2 {
+		font-size: 40px;
+		padding-left: 35px;
+		text-align: left;
+	}
+	.about p {
+		color: #4b32f0;
+		font-weight: bold;
+		font-size: 40px;
+		padding-left: 20px;
+		text-align: left;
+	}
+	.about .text-and {
+		font-size: 200px;
+		color: #e2e2e2;
+		line-height: 109px;
+		z-index: -1;
+		position: relative;
+		left: 120px;
+	}
+	.about2 .text-frontend, .aboutgraphic .text-frontend {
+		padding: 3em 0 2em 0;
+	}
+	.about2 .gitlink, .aboutgraphic .link {
+		width: 100%;
+	}
+	.about2 .hovereffect .overlay, .aboutgraphic .hovereffect .overlay{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		overflow: hidden;
+		top: 0;
+		left: 0;
+		padding: 25px 20px; 
+		opacity: 1;
+	}	
+	.footer .mail {
+		text-align: center;
+
+	}
+	.footer .social {
+		text-align: center;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}	
+}
+
